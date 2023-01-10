@@ -9,19 +9,19 @@ function Meta(props) {
   // Meta values that are the same across all pages
   const globalMeta = {
     // Site name
-    siteName: "Buzzedison",
+    siteName: "My App",
     // Your production domain (example: https://myapp.com)
-    domain: "https://www.buzzedison.co",
+    domain: "",
     // Your Twitter handle (example: @divjoy)
-    twitterHandle: "buzzedison",
+    twitterHandle: "",
   };
 
   // Default meta values for current page (override with props)
   const defaultPageMeta = {
     // Page title
-    title: "Edison Ade: Business and Technology Consultant",
+    title: "My App",
     // Page description
-    description: "Business Coaching for Ambitious Entrepreneurs.As your coach, I will work with you one-on-one to identify areas of improvement and develop a customized plan to help you reach your goals.",
+    description: "My app description",
     // Social share image (create this file in /public/images/)
     image: "/images/social.png",
     // Page type (see https://ogp.me/#types)
