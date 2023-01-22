@@ -2,7 +2,7 @@ const firebaseAdmin = require("./_firebase");
 
 const firestore = firebaseAdmin.firestore();
 
-
+/**** USERS ****/
 
 // Get user by uid
 function getUser(uid) {
