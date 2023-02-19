@@ -2,7 +2,7 @@ import React from "react";
 import Meta from "components/Meta";
 import HeroSection3 from "components/HeroSection3";
 import { requireAuth } from "util/auth";
-
+import DashboardPage from "components/DashboardPage";
 
 function DashboardPage(props) {
   return (
@@ -13,13 +13,13 @@ function DashboardPage(props) {
         size="medium"
         bgImage=""
         bgImageOpacity={1}
-        title="Features coming soon!"
-        subtitle="I have something awesome coming soon."
-        buttonText="Get Notified"
+        title="Your landing page title here"
+        subtitle="This landing page is perfect for showing off your awesome product and driving people to sign up for a paid plan."
+        buttonText="Get Started"
         buttonColor="primary"
         buttonPath="/pricing"
       />
-    
+      <DashboardPage />
     </>
   );
 }
