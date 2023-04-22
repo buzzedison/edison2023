@@ -39,16 +39,14 @@ function IndexPage(props) {
       />
       <Box mt={-5}>
         <Slide in={checked} direction="up" timeout={1000}>
-        <div>
-            <HeroSection2
-              bgColor="default"
-              size="medium"
-              bgImage=""
-              bgImageOpacity={1}
-              title="Page-Turning Profits: Unleash Your Business Potential"
-              subtitle="Unlock the ultimate business growth playbook with our transformative book collection. Delve into ingenious pricing strategies, productivity hacks, masterful marketing techniques, and much more. Empower your entrepreneurial journey and turn the page to a prosperous future!"
-            />
-          </div>
+          <HeroSection2
+            bgColor="default"
+            size="medium"
+            bgImage=""
+            bgImageOpacity={1}
+            title="Page-Turning Profits: Unleash Your Business Potential"
+            subtitle="Unlock the ultimate business growth playbook with our transformative book collection. Delve into ingenious pricing strategies, productivity hacks, masterful marketing techniques, and much more. Empower your entrepreneurial journey and turn the page to a prosperous future!"
+          />
         </Slide>
       </Box>
       <TeamBiosSection
