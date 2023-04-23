@@ -11,8 +11,8 @@ function CoachingPage(props) {
       <Meta title="Coaching" />
       <Navbar3
         color="default"
-        logo="https://buzzedison.com/wp-content/uploads/2023/03/website-logo.svg"
-        logoInverted="https://buzzedison.com/wp-content/uploads/2023/03/website-logo.png"
+        logo="https://buzzedison.com/wp-content/uploads/2022/04/BUZZEDISON-NEW-LOGO.png"
+        logoInverted="https://buzzedison.com/wp-content/uploads/2022/04/BUZZEDISON-NEW-LOGO.png"
       />
       <HeroSection3
         bgColor="default"

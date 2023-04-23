@@ -1,12 +1,10 @@
 import React from 'react';
 import { Container, Typography, Box, Accordion, AccordionSummary, AccordionDetails, Button, makeStyles } from '@material-ui/core'; 
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-
+import Navbar from 'components/Navbar';
 import Footer2 from "components/Footer2";
 import CustomHero from 'components/BlueHeader';
 import Link from "next/link";
-import Navbar from './Navbar';
-
 
 const useStyles = makeStyles((theme) => ({
   accordion: {
@@ -94,11 +92,7 @@ export default function Blue() {
 
   return (
     <>
-<Navbar
-        color="default"
-        logo="https://buzzedison.com/wp-content/uploads/2023/03/website-logo.svg"
-        logoInverted="https://buzzedison.com/wp-content/uploads/2023/03/website-logo.png"
-      />
+      <Navbar />
       <CustomHero/>
       <Container maxWidth="md">
         <Box py={4}>

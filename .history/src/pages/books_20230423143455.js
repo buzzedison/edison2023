@@ -12,8 +12,8 @@ function BooksPage(props) {
       <Meta title="Books" />
       <Navbar4
         color="default"
-        logo="https://buzzedison.com/wp-content/uploads/2022/04/BUZZEDISON-NEW-LOGO.png"
-        logoInverted="https://buzzedison.com/wp-content/uploads/2022/04/BUZZEDISON-NEW-LOGO.png"
+        logo="https://buzzedison.com/wp-content/uploads/2023/03/website-logo.svg"
+        logoInverted="https://buzzedison.com/wp-content/uploads/2023/03/website-logo.png"
       />
       <HeroSection2
         bgColor="default"
@@ -21,7 +21,7 @@ function BooksPage(props) {
         bgImage=""
         bgImageOpacity={1}
         title="Discover the Wisdom and Insights of a Author with Two Published Books and More on the Way"
-        subtitle=" Edison is a leading expert in the field of [specific area of expertise]. With two published books under their belt and more on the way, [Business Author's Name] is a valuable resource for those seeking wisdom and insights on how to succeed in the business world."
+        subtitle=" Edison is a leading expert in Business development, Brand Strategy and Digital Transformation. With two published books under their belt and more on the way, Edison is a valuable resource for those seeking wisdom and insights on how to succeed in the business world."
       />
       <HeroSection5
         bgColor="default"

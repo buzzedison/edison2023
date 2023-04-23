@@ -5,8 +5,7 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import Footer2 from "components/Footer2";
 import CustomHero from 'components/BlueHeader';
 import Link from "next/link";
-import Navbar from './Navbar';
-
+import Navbar2 from './Navbar2';
 
 const useStyles = makeStyles((theme) => ({
   accordion: {
@@ -94,11 +93,7 @@ export default function Blue() {
 
   return (
     <>
-<Navbar
-        color="default"
-        logo="https://buzzedison.com/wp-content/uploads/2023/03/website-logo.svg"
-        logoInverted="https://buzzedison.com/wp-content/uploads/2023/03/website-logo.png"
-      />
+<Navbar2/>
       <CustomHero/>
       <Container maxWidth="md">
         <Box py={4}>

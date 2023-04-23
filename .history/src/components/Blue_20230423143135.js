@@ -97,7 +97,7 @@ export default function Blue() {
 <Navbar
         color="default"
         logo="https://buzzedison.com/wp-content/uploads/2023/03/website-logo.svg"
-        logoInverted="https://buzzedison.com/wp-content/uploads/2023/03/website-logo.png"
+        logoInverted="https://buzzedison.com/wp-content/uploads/2022/04/BUZZEDISON-NEW-LOGO.png"
       />
       <CustomHero/>
       <Container maxWidth="md">
