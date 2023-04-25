@@ -17,7 +17,7 @@ const GoalSetting = () => {
     measurable: 'How will the goal be measured(e.g website traffic, leads?)',
     achievable: 'Is the goal to hit a target number or increase by an amount?',
     relevant: 'What will be the change or result',
-    timeBound: 'What is the deadline when the goal must be achieved?',
+    timeBound: '',
   });
   const [generatedGoal, setGeneratedGoal] = useState('');
   const [showSuccess, setShowSuccess] = useState(false);
