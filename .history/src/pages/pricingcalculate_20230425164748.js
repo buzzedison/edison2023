@@ -1,4 +1,4 @@
-import Footer2 from 'components/Footer2'
+import Footer from 'components/Footer'
 import Navbar from 'components/Navbar'
 import PricingCalculator from 'components/PricingCalc'
 import React from 'react'
@@ -15,17 +15,7 @@ export default function pricingcalculate() {
 
     <PricingCalculator/>
 </div>
-<Footer2
-bgColor="primary"
-size="medium"
-bgImage=""
-bgImageOpacity={1}
-description=""
-copyright={`© ${new Date().getFullYear()} Buzzedison`}
-logo="https://buzzedison.com/wp-content/uploads/2022/12/1.png"
-logoInverted="https://buzzedison.com/wp-content/uploads/2022/12/1.png"
-sticky={true}
-/>
+<Footer/>
 </>
   )
 }

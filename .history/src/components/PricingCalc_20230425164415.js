@@ -19,16 +19,6 @@ const useStyles = makeStyles((theme) => ({
     marginTop: theme.spacing(4),
     textAlign: 'center',
   },
-  title: {
-    marginBottom: theme.spacing(2),
-  },
-  mainTitle: {
-    color: '#3f51b5', // You can change this color to your preference
-  },
-
-  calculateButton: {
-    marginBottom: theme.spacing(4),
-  },
 }));
 
 const PricingCalc = () => {
@@ -76,24 +66,13 @@ const PricingCalc = () => {
   };
 
   return (
-
-    
     <Container maxWidth="sm" className={classes.container}>
-     <Typography variant="h4" className={`${classes.title} ${classes.mainTitle}`}>
-      Simple Pricing Calculator
-    </Typography>
-    <Typography variant="h6" className={classes.title}>
-      Optimize Your Pricing Strategy
-    </Typography>
       <TextField className={classes.input} label="Product/Service Cost" value={cost} onChange={(e) => setCost(e.target.value)} fullWidth />
       <TextField className={classes.input} label="Desired Profit Margin (%)" value={margin} onChange={(e) => setMargin(e.target.value)} fullWidth />
       <TextField className={classes.input} label="Market Price Range - Minimum" value={minPrice} onChange={(e) => setMinPrice(e.target.value)} fullWidth />
       <TextField className={classes.input} label="Market Price Range - Maximum" value={maxPrice} onChange={(e) => setMaxPrice(e.target.value)} fullWidth />
 
-      <Button onClick={calculatePricing} variant="contained" 
-      color="primary"
-      className={classes.calculateButton}
-      >
+      <Button onClick={calculatePricing} variant="contained" color="primary">
         Calculate
       </Button>
 

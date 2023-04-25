@@ -25,10 +25,6 @@ const useStyles = makeStyles((theme) => ({
   mainTitle: {
     color: '#3f51b5', // You can change this color to your preference
   },
-
-  calculateButton: {
-    marginBottom: theme.spacing(4),
-  },
 }));
 
 const PricingCalc = () => {
@@ -79,7 +75,7 @@ const PricingCalc = () => {
 
     
     <Container maxWidth="sm" className={classes.container}>
-     <Typography variant="h4" className={`${classes.title} ${classes.mainTitle}`}>
+      <Typography variant="h4" className={classes.title}>
       Simple Pricing Calculator
     </Typography>
     <Typography variant="h6" className={classes.title}>
@@ -90,10 +86,7 @@ const PricingCalc = () => {
       <TextField className={classes.input} label="Market Price Range - Minimum" value={minPrice} onChange={(e) => setMinPrice(e.target.value)} fullWidth />
       <TextField className={classes.input} label="Market Price Range - Maximum" value={maxPrice} onChange={(e) => setMaxPrice(e.target.value)} fullWidth />
 
-      <Button onClick={calculatePricing} variant="contained" 
-      color="primary"
-      className={classes.calculateButton}
-      >
+      <Button onClick={calculatePricing} variant="contained" color="primary">
         Calculate
       </Button>
 
