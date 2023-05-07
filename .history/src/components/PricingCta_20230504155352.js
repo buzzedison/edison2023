@@ -51,10 +51,10 @@ export default function PricingCTA() {
           </Grid>
           <Grid item xs={12} md={6} className={classes.imageContainer}>
             <Image
-              src="/pricing.png" // Replace with your desired image URL
+              src="/image-placeholder.png" // Replace with your desired image URL
               alt="Image placeholder"
-              width={500}
-              height={700}
+              width={400}
+              height={300}
             />
           </Grid>
         </Grid>

@@ -9,7 +9,6 @@ import Footer2 from "components/Footer2";
 import Box from "@mui/material/Box";
 import Slide from "@mui/material/Slide";
 import Subscribe from "components/Subscribe";
-import Head from "next/head";
 
 function IndexPage(props) {
   const [checked, setChecked] = React.useState(false);
@@ -20,10 +19,6 @@ function IndexPage(props) {
 
   return (
     <>
-    <Head>
-      <title>Home | Buzzedison</title>
-      <meta name="description" content="Buzzedison is a business and brand strategy firm that helps entrepreneurs and business owners start, scale and profit from their business." />
-      </Head>
       <Meta />
       <Navbar
         color="default"

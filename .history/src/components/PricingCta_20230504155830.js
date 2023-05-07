@@ -54,7 +54,7 @@ export default function PricingCTA() {
               src="/pricing.png" // Replace with your desired image URL
               alt="Image placeholder"
               width={500}
-              height={700}
+              height={600}
             />
           </Grid>
         </Grid>

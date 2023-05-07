@@ -5,7 +5,6 @@ import Footer2 from "components/Footer2";
 import PricingCards from 'components/PricingCard';
 import PricingCTA from 'components/PricingCta';
 import PricingResources from 'components/PricingTool';
-import PricingResourcesTitle from 'components/PricingToolTitle';
 function pricingstrategy() {
   return (
     <div>
@@ -18,7 +17,6 @@ function pricingstrategy() {
         <PricingMain/>
         <PricingCards/>
         <PricingCTA/>
-        <PricingResourcesTitle/>
         <PricingResources/>
         <Footer2
 // bgColor="primary"

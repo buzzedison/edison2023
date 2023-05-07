@@ -23,6 +23,7 @@
     "jspdf": "^2.5.1",
     "jspdf-autotable": "^3.5.28",
     "next": "12.2.5",
+    "pdf-lib": "^1.17.1",
     "query-string": "6.13.8",
     "raw-body": "2.4.1",
     "react": "17.0.2",
