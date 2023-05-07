@@ -87,7 +87,7 @@ const PricingStrategyTemplateForm = () => {
     
         <Container maxWidth="lg">
           <Typography variant="h4" component="h2" align="center" gutterBottom>
-           The Pricing Strategy Template
+            Pricing Strategy Template
           </Typography>
           <Grid container spacing={3}>
             <Grid item xs={12} md={8}>
