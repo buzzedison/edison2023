@@ -9,19 +9,19 @@ function Meta(props) {
   // Meta values that are the same across all pages
   const globalMeta = {
     // Site name
-    siteName: "My App",
+    siteName: "Buzzedison",
     // Your production domain (example: https://myapp.com)
-    domain: "",
+    domain: "https://www.buzzedison.co",
     // Your Twitter handle (example: @divjoy)
-    twitterHandle: "",
+    twitterHandle: "buzzedison",
   };
 
   // Default meta values for current page (override with props)
   const defaultPageMeta = {
     // Page title
-    title: "My App",
+    title: "Edison Ade: Business and Technology Consultant",
     // Page description
-    description: "My app description",
+    description: "Business Coaching for Ambitious Entrepreneurs.As your coach, I will work with you one-on-one to identify areas of improvement and develop a customized plan to help you reach your goals.",
     // Social share image (create this file in /public/images/)
     image: "/images/social.png",
     // Page type (see https://ogp.me/#types)
@@ -36,7 +36,7 @@ function Meta(props) {
   // prettier-ignore
   return (
     <Head>
-      <title>{meta.title}</title>
+      <title>Buzzedison</title>
       <meta content={meta.description} name="description" key="description" />
       {meta.domain && <link rel="canonical" href={`${meta.domain}${router.asPath}`} key="canonical" />}
 
