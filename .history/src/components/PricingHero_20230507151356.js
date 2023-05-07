@@ -1,7 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { Container, Typography, Box, Button, Grid } from '@material-ui/core';
-import Image from 'next/image';
+import BookIcon from '@material-ui/icons/Book';
 
 const useStyles = makeStyles((theme) => ({
   heroSection: {
@@ -22,19 +22,13 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: 300,
     marginBottom: theme.spacing(4),
   },
-  buyOnGumroadButton: {
+  learnMoreButton: {
     marginRight: theme.spacing(2),
   },
-  bookImageWrapper: {
-    position: 'relative',
-    overflow: 'hidden',
-    transition: 'transform 0.3s ease',
-    '&:hover': {
-      transform: 'scale(1.05)',
-    },
-  },
-  bookImage: {
-    objectFit: 'cover',
+  bookIcon: {
+    fontSize: '6rem',
+    marginBottom: theme.spacing(4),
+    color: theme.palette.primary.main,
   },
 }));
 
@@ -53,31 +47,19 @@ export default function PricingMain() {
               <Typography variant="h4" component="p" className={classes.subtitle}>
                 Transform your business strategy with effective pricing techniques
               </Typography>
-              <a href="https://buzzedison.gumroad.com/l/pricingstrategy" target="_blank" rel="noopener noreferrer">
-                <Button
-                  className={classes.buyOnGumroadButton}
-                  variant="contained"
-                  color="primary"
-                >
-                  Buy on Gumroad
-                </Button>
-              </a>
-              <a href="https://www.amazon.com/Winning-Pricing-Strategy-ideal-market-ebook/dp/B09HMZCTXK" target="_blank" rel="noopener noreferrer">
-                <Button variant="outlined" color="primary">
-                  Buy on Amazon
-                </Button>
-              </a>
+              <Button
+                className={classes.learnMoreButton}
+                variant="contained"
+                color="primary"
+              >
+                Learn More
+              </Button>
+              <Button variant="outlined" color="primary">
+                Buy Now
+              </Button>
             </Grid>
             <Grid item xs={12} sm={6}>
-              <Box className={classes.bookImageWrapper}>
-                <Image
-                  src="/pricingbook.png"
-                  alt="Book cover"
-                  width={320}
-                  height={480}
-                  className={classes.bookImage}
-                />
-              </Box>
+              <BookIcon className={classes.bookIcon} />
             </Grid>
           </Grid>
         </Box>

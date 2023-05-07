@@ -11,15 +11,6 @@ import Slide from "@mui/material/Slide";
 import Subscribe from "components/Subscribe";
 import Head from "next/head";
 import BookPromo from "components/BookPromotion";
-import Services from "components/DoForYou";
-
-import Container from "@material-ui/core/Container";
-import Grid from "@material-ui/core/Grid";
-import Paper from "@material-ui/core/Paper";
-import Typography from "@material-ui/core/Typography";
-import WebIcon from "@material-ui/icons/Web";
-import BusinessCenterIcon from "@material-ui/icons/BusinessCenter";
-import AccountBalanceIcon from "@material-ui/icons/AccountBalance";
 
 function IndexPage(props) {
   const [checked, setChecked] = React.useState(false);
@@ -54,7 +45,7 @@ function IndexPage(props) {
         buttonPath="/blueprint"
       />
       <Box mt={-5}>
-        {/* <Slide in={checked} direction="up" timeout={1000}>
+        <Slide in={checked} direction="up" timeout={1000}>
         <div>
             <HeroSection2
               bgColor="default"
@@ -65,10 +56,9 @@ function IndexPage(props) {
               subtitle="Unlock the ultimate business growth playbook with our transformative book collection. Delve into ingenious pricing strategies, productivity hacks, masterful marketing techniques, and much more. Empower your entrepreneurial journey and turn the page to a prosperous future!"
             />
           </div>
-        </Slide> */}
+        </Slide>
       </Box>
       <BookPromo/>
-      <Services/>
       {/* <TeamBiosSection
         bgColor="default"
         size="medium"

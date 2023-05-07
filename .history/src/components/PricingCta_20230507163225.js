@@ -2,7 +2,6 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { Box, Button, Container, Typography, Grid } from '@material-ui/core';
 import Image from 'next/image';
-import Link from 'next/link';
 
 const useStyles = makeStyles((theme) => ({
   ctaSection: {
@@ -39,23 +38,22 @@ export default function PricingCTA() {
               Don't miss out on this indispensable resource that will help you reshape your business's future. Get your copy today and embrace the power of pricing!
             </Typography>
             <Box>
-              <Link href="/pricingstrategy" passHref>
-                <Button
-                  variant="contained"
-                  size="large"
-                  className={classes.ctaButton}
-                >
-                  Get Your Copy Today
-                </Button>
-              </Link>
+              <Button
+                variant="contained"
+                size="large"
+                className={classes.ctaButton}
+                onClick={() => console.log('CTA button clicked')}
+              >
+                Get Your Copy Today
+              </Button>
             </Box>
           </Grid>
           <Grid item xs={12} md={6} className={classes.imageContainer}>
             <Image
               src="/pricing.png" // Replace with your desired image URL
-              alt="Image placeholder"
-              width={400}
-              height={600}
+              alt="pricingbook"
+              width={500}
+              height={700}
             />
           </Grid>
         </Grid>

@@ -13,14 +13,6 @@ import Head from "next/head";
 import BookPromo from "components/BookPromotion";
 import Services from "components/DoForYou";
 
-import Container from "@material-ui/core/Container";
-import Grid from "@material-ui/core/Grid";
-import Paper from "@material-ui/core/Paper";
-import Typography from "@material-ui/core/Typography";
-import WebIcon from "@material-ui/icons/Web";
-import BusinessCenterIcon from "@material-ui/icons/BusinessCenter";
-import AccountBalanceIcon from "@material-ui/icons/AccountBalance";
-
 function IndexPage(props) {
   const [checked, setChecked] = React.useState(false);
 

@@ -53,7 +53,7 @@ export default function PricingMain() {
               <Typography variant="h4" component="p" className={classes.subtitle}>
                 Transform your business strategy with effective pricing techniques
               </Typography>
-              <a href="https://buzzedison.gumroad.com/l/pricingstrategy" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.example.com/gumroad-link" target="_blank" rel="noopener noreferrer">
                 <Button
                   className={classes.buyOnGumroadButton}
                   variant="contained"
