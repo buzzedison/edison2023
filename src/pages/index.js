@@ -34,19 +34,7 @@ function IndexPage(props) {
         logo="https://buzzedison.com/wp-content/uploads/2023/03/website-logo.svg"
         logoInverted="https://buzzedison.com/wp-content/uploads/2023/03/website-logo.png"
       />
-      <HeroSection
-        bgColor="default"
-        size="medium"
-        bgImage=""
-        bgImageOpacity={1}
-        title="Start, Scale and Profit from Your Business"
-        subtitle="This is a completely free 12-week program that will help you start, scale and profit from your business using a systematic approach that focuses on five key areas: strategy,
-         marketing, operations, finance and innovation. "
-        image="https://buzzedison.com/wp-content/uploads/2023/01/1.png"
-        buttonText="Learn More"
-        buttonColor="primary"
-        buttonPath="/blueprint"
-      />
+     
       <Box mt={-5}>
         {/* <Slide in={checked} direction="up" timeout={1000}>
         <div>
@@ -61,6 +49,19 @@ function IndexPage(props) {
           </div>
         </Slide> */}
       </Box>
+      <HeroSection
+        bgColor="default"
+        size="medium"
+        bgImage=""
+        bgImageOpacity={1}
+        title="Start, Scale and Profit from Your Business"
+        subtitle="This is a completely free 12-week program that will help you start, scale and profit from your business using a systematic approach that focuses on five key areas: strategy,
+         marketing, operations, finance and innovation. "
+        image="https://buzzedison.com/wp-content/uploads/2023/01/1.png"
+        buttonText="Learn More"
+        buttonColor="primary"
+        buttonPath="/blueprint"
+      />
       <BookPromo/>
       <Services/>
       {/* <TeamBiosSection

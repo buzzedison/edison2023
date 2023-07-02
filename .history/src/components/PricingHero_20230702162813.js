@@ -22,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: 300,
     marginBottom: theme.spacing(4),
   },
-  learnMoreButton: {
+  buyOnGumroadButton: {
     marginRight: theme.spacing(2),
   },
   bookImageWrapper: {
@@ -53,16 +53,20 @@ export default function PricingMain() {
               <Typography variant="h4" component="p" className={classes.subtitle}>
                 Transform your business strategy with effective pricing techniques
               </Typography>
-              <Button
-                className={classes.learnMoreButton}
-                variant="contained"
-                color="primary"
-              >
-                Learn More
-              </Button>
-              <Button variant="outlined" color="primary">
-                Buy Now
-              </Button>
+              <a href="https://selar.co/ybjy" target="_blank" rel="noopener noreferrer">
+                <Button
+                  className={classes.buyOnGumroadButton}
+                  variant="contained"
+                  color="primary"
+                >
+                  Buy on Selar
+                </Button>
+              </a>
+              <a href="https://www.amazon.com/Winning-Pricing-Strategy-ideal-market-ebook/dp/B09HMZCTXK" target="_blank" rel="noopener noreferrer">
+                <Button variant="outlined" color="primary">
+                  Buy on Amazon
+                </Button>
+              </a>
             </Grid>
             <Grid item xs={12} sm={6}>
               <Box className={classes.bookImageWrapper}>

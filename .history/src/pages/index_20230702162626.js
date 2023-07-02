@@ -3,13 +3,17 @@ import Meta from "components/Meta";
 import Navbar from "components/Navbar";
 import HeroSection from "components/HeroSection";
 import HeroSection2 from "components/HeroSection2";
-import TeamBiosSection from "components/TeamBiosSection";
+// import TeamBiosSection from "components/TeamBiosSection";
 // import NewsletterSection from "components/NewsletterSection";
 import Footer2 from "components/Footer2";
 import Box from "@mui/material/Box";
-import Slide from "@mui/material/Slide";
+// import Slide from "@mui/material/Slide";
 import Subscribe from "components/Subscribe";
 import Head from "next/head";
+import BookPromo from "components/BookPromotion";
+import Services from "components/DoForYou";
+
+
 
 function IndexPage(props) {
   const [checked, setChecked] = React.useState(false);
@@ -30,6 +34,21 @@ function IndexPage(props) {
         logo="https://buzzedison.com/wp-content/uploads/2023/03/website-logo.svg"
         logoInverted="https://buzzedison.com/wp-content/uploads/2023/03/website-logo.png"
       />
+     
+      <Box mt={-5}>
+        {/* <Slide in={checked} direction="up" timeout={1000}>
+        <div>
+            <HeroSection2
+              bgColor="default"
+              size="medium"
+              bgImage=""
+              bgImageOpacity={1}
+              title="Page-Turning Profits: Unleash Your Business Potential"
+              subtitle="Unlock the ultimate business growth playbook with our transformative book collection. Delve into ingenious pricing strategies, productivity hacks, masterful marketing techniques, and much more. Empower your entrepreneurial journey and turn the page to a prosperous future!"
+            />
+          </div>
+        </Slide> */}
+      </Box>
       <HeroSection
         bgColor="default"
         size="medium"
@@ -43,28 +62,16 @@ function IndexPage(props) {
         buttonColor="primary"
         buttonPath="/blueprint"
       />
-      <Box mt={-5}>
-        <Slide in={checked} direction="up" timeout={1000}>
-        <div>
-            <HeroSection2
-              bgColor="default"
-              size="medium"
-              bgImage=""
-              bgImageOpacity={1}
-              title="Page-Turning Profits: Unleash Your Business Potential"
-              subtitle="Unlock the ultimate business growth playbook with our transformative book collection. Delve into ingenious pricing strategies, productivity hacks, masterful marketing techniques, and much more. Empower your entrepreneurial journey and turn the page to a prosperous future!"
-            />
-          </div>
-        </Slide>
-      </Box>
-      <TeamBiosSection
+      <BookPromo/>
+      <Services/>
+      {/* <TeamBiosSection
         bgColor="default"
         size="medium"
         bgImage=""
         bgImageOpacity={1}
         title=""
         subtitle=""
-      />
+      /> */}
       <Box mt={-5}>
         <HeroSection
           bgColor="default"

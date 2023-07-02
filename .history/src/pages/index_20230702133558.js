@@ -3,12 +3,17 @@ import Meta from "components/Meta";
 import Navbar from "components/Navbar";
 import HeroSection from "components/HeroSection";
 import HeroSection2 from "components/HeroSection2";
-import TeamBiosSection from "components/TeamBiosSection";
+// import TeamBiosSection from "components/TeamBiosSection";
 // import NewsletterSection from "components/NewsletterSection";
 import Footer2 from "components/Footer2";
 import Box from "@mui/material/Box";
-import Slide from "@mui/material/Slide";
+// import Slide from "@mui/material/Slide";
 import Subscribe from "components/Subscribe";
+import Head from "next/head";
+import BookPromo from "components/BookPromotion";
+import Services from "components/DoForYou";
+
+
 
 function IndexPage(props) {
   const [checked, setChecked] = React.useState(false);
@@ -19,27 +24,19 @@ function IndexPage(props) {
 
   return (
     <>
-      {/* <Meta /> */}
+    <Head>
+      <title>Home | Buzzedison</title>
+      <meta name="description" content="Buzzedison is a business and brand strategy firm that helps entrepreneurs and business owners start, scale and profit from their business." />
+      </Head>
+      <Meta />
       <Navbar
         color="default"
         logo="https://buzzedison.com/wp-content/uploads/2023/03/website-logo.svg"
         logoInverted="https://buzzedison.com/wp-content/uploads/2023/03/website-logo.png"
       />
-      <HeroSection
-        bgColor="default"
-        size="medium"
-        bgImage=""
-        bgImageOpacity={1}
-        title="Start, Scale and Profit from Your Business"
-        subtitle="This is a completely free 12-week program that will help you start, scale and profit from your business using a systematic approach that focuses on five key areas: strategy,
-         marketing, operations, finance and innovation. "
-        image="https://buzzedison.com/wp-content/uploads/2023/01/1.png"
-        buttonText="Learn More"
-        buttonColor="primary"
-        buttonPath="/blueprint"
-      />
+     
       <Box mt={-5}>
-        <Slide in={checked} direction="up" timeout={1000}>
+        {/* <Slide in={checked} direction="up" timeout={1000}>
         <div>
             <HeroSection2
               bgColor="default"
@@ -50,16 +47,18 @@ function IndexPage(props) {
               subtitle="Unlock the ultimate business growth playbook with our transformative book collection. Delve into ingenious pricing strategies, productivity hacks, masterful marketing techniques, and much more. Empower your entrepreneurial journey and turn the page to a prosperous future!"
             />
           </div>
-        </Slide>
+        </Slide> */}
       </Box>
-      <TeamBiosSection
+      <BookPromo/>
+      <Services/>
+      {/* <TeamBiosSection
         bgColor="default"
         size="medium"
         bgImage=""
         bgImageOpacity={1}
         title=""
         subtitle=""
-      />
+      /> */}
       <Box mt={-5}>
         <HeroSection
           bgColor="default"

@@ -53,13 +53,13 @@ export default function PricingMain() {
               <Typography variant="h4" component="p" className={classes.subtitle}>
                 Transform your business strategy with effective pricing techniques
               </Typography>
-              <a href="https://buzzedison.gumroad.com/l/pricingstrategy" target="_blank" rel="noopener noreferrer">
+              <a href="https://selar.co/ybjy" target="_blank" rel="noopener noreferrer">
                 <Button
                   className={classes.buyOnGumroadButton}
                   variant="contained"
                   color="primary"
                 >
-                  Buy on Gumroad
+                  Buy on Selar
                 </Button>
               </a>
               <a href="https://www.amazon.com/Winning-Pricing-Strategy-ideal-market-ebook/dp/B09HMZCTXK" target="_blank" rel="noopener noreferrer">
